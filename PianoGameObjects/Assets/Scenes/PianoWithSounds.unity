@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 110784010}
   - component: {fileID: 110784009}
   - component: {fileID: 110784013}
+  - component: {fileID: 110784014}
   m_Layer: 0
   m_Name: F
   m_TagString: Untagged
@@ -213,7 +214,7 @@ Transform:
   m_LocalScale: {x: 1.503, y: 4.113, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &110784013
 AudioSource:
@@ -226,7 +227,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 70224cbaf6cf84934a13a11d3b8f01c8, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -311,6 +312,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &110784014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110784008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43b7ee84497ede1439350fdf9154ef7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pianoF: {fileID: 110784013}
 --- !u!1 &294445386
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,6 +338,7 @@ GameObject:
   - component: {fileID: 294445388}
   - component: {fileID: 294445387}
   - component: {fileID: 294445391}
+  - component: {fileID: 294445392}
   m_Layer: 0
   m_Name: A
   m_TagString: Untagged
@@ -403,7 +418,7 @@ Transform:
   m_LocalScale: {x: 1.503, y: 4.113, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &294445391
 AudioSource:
@@ -416,7 +431,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b29cdcb4ec4a14a99914603cf9e2c7b8, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -501,6 +516,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &294445392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294445386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f51da8452bd9d194bb55699a921fcfa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pianoA: {fileID: 294445391}
 --- !u!1 &305610846
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,6 +542,7 @@ GameObject:
   - component: {fileID: 305610848}
   - component: {fileID: 305610847}
   - component: {fileID: 305610851}
+  - component: {fileID: 305610852}
   m_Layer: 0
   m_Name: G
   m_TagString: Untagged
@@ -593,7 +622,7 @@ Transform:
   m_LocalScale: {x: 1.503, y: 4.113, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &305610851
 AudioSource:
@@ -606,7 +635,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 60e513ba55d234f44a8dc6f52ff83ae6, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -691,6 +720,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &305610852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305610846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31639cc5e93d1b44698afd51647cfcff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pianoG: {fileID: 305610851}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -787,6 +829,7 @@ GameObject:
   - component: {fileID: 580206618}
   - component: {fileID: 580206617}
   - component: {fileID: 580206621}
+  - component: {fileID: 580206622}
   m_Layer: 0
   m_Name: G#
   m_TagString: Untagged
@@ -866,7 +909,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 2.61, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &580206621
 AudioSource:
@@ -879,7 +922,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2be354dd22f5c4c1f8b5bfefc86d6ca6, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -964,6 +1007,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &580206622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580206616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ed74a8ce6b6f34fb111e11da7bc4fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pianoGSharp: {fileID: 580206621}
 --- !u!1 &749255434
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,6 +1033,7 @@ GameObject:
   - component: {fileID: 749255436}
   - component: {fileID: 749255435}
   - component: {fileID: 749255439}
+  - component: {fileID: 749255440}
   m_Layer: 0
   m_Name: A#
   m_TagString: Untagged
@@ -1056,7 +1113,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 2.61, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &749255439
 AudioSource:
@@ -1069,7 +1126,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 58ccc9af6b8964d9494cafc7414d7f67, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1154,6 +1211,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &749255440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749255434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33ea33e1e6b7a249934e8a01d886a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pianoASharp: {fileID: 749255439}
 --- !u!1 &1035996129
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,6 +1237,7 @@ GameObject:
   - component: {fileID: 1035996131}
   - component: {fileID: 1035996130}
   - component: {fileID: 1035996134}
+  - component: {fileID: 1035996135}
   m_Layer: 0
   m_Name: D
   m_TagString: Untagged
@@ -1246,7 +1317,7 @@ Transform:
   m_LocalScale: {x: 1.503, y: 4.113, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1035996134
 AudioSource:
@@ -1259,7 +1330,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cabbe941093c94b828b38b4648025943, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1344,6 +1415,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1035996135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035996129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10fff1cf5821c8f4c90a0f0e7d246d09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pianoD: {fileID: 1035996134}
 --- !u!1 &1244476069
 GameObject:
   m_ObjectHideFlags: 0
@@ -1357,6 +1441,7 @@ GameObject:
   - component: {fileID: 1244476071}
   - component: {fileID: 1244476070}
   - component: {fileID: 1244476074}
+  - component: {fileID: 1244476075}
   m_Layer: 0
   m_Name: C#
   m_TagString: Untagged
@@ -1436,7 +1521,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 2.61, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1244476074
 AudioSource:
@@ -1449,7 +1534,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 360263c8f6fb4435382265fa1eb96f59, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1534,6 +1619,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1244476075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244476069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73a683397a912544db3e1ff2e9461adb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pianoCSharp: {fileID: 1244476074}
 --- !u!1 &1250441680
 GameObject:
   m_ObjectHideFlags: 0
@@ -1547,6 +1645,7 @@ GameObject:
   - component: {fileID: 1250441682}
   - component: {fileID: 1250441681}
   - component: {fileID: 1250441685}
+  - component: {fileID: 1250441686}
   m_Layer: 0
   m_Name: E
   m_TagString: Untagged
@@ -1626,7 +1725,7 @@ Transform:
   m_LocalScale: {x: 1.503, y: 4.113, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1250441685
 AudioSource:
@@ -1639,7 +1738,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2a9a899ae947d400b8b54154c21a5632, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1724,6 +1823,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1250441686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250441680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7c983ce2d63e7d4088ac93f5102b0c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pianoE: {fileID: 1250441685}
 --- !u!1 &1306566162
 GameObject:
   m_ObjectHideFlags: 0
@@ -1737,6 +1849,7 @@ GameObject:
   - component: {fileID: 1306566164}
   - component: {fileID: 1306566163}
   - component: {fileID: 1306566167}
+  - component: {fileID: 1306566168}
   m_Layer: 0
   m_Name: 'F# '
   m_TagString: Untagged
@@ -1816,7 +1929,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 2.61, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1306566167
 AudioSource:
@@ -1829,7 +1942,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3c8fd2bc1a8aa49b2874797fb7d34751, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1914,6 +2027,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1306566168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306566162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ac21a90b9d17694db7dbd437f0d0255, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pianoFSharp: {fileID: 1306566167}
 --- !u!1 &1350008065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1927,6 +2053,7 @@ GameObject:
   - component: {fileID: 1350008067}
   - component: {fileID: 1350008066}
   - component: {fileID: 1350008070}
+  - component: {fileID: 1350008071}
   m_Layer: 0
   m_Name: B
   m_TagString: Untagged
@@ -2006,7 +2133,7 @@ Transform:
   m_LocalScale: {x: 1.503, y: 4.113, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1350008070
 AudioSource:
@@ -2019,7 +2146,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 21def7781cb3a4ab490bdaeb0f3534a5, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2104,6 +2231,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1350008071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350008065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beaabd167be48874e86a015c945e928a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pianoB: {fileID: 1350008070}
 --- !u!1 &1877615271
 GameObject:
   m_ObjectHideFlags: 0
@@ -2117,6 +2257,7 @@ GameObject:
   - component: {fileID: 1877615273}
   - component: {fileID: 1877615272}
   - component: {fileID: 1877615276}
+  - component: {fileID: 1877615277}
   m_Layer: 0
   m_Name: D#
   m_TagString: Untagged
@@ -2196,7 +2337,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 2.61, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1877615276
 AudioSource:
@@ -2209,7 +2350,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 818d5a045b659492188c91c6a3e5f0cb, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2294,6 +2435,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1877615277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877615271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 525cb53d1b8b7654c8e0077e5b6ca53e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pianoDSharp: {fileID: 1877615276}
 --- !u!1 &2043980767
 GameObject:
   m_ObjectHideFlags: 0
@@ -2307,6 +2461,7 @@ GameObject:
   - component: {fileID: 2043980769}
   - component: {fileID: 2043980768}
   - component: {fileID: 2043980772}
+  - component: {fileID: 2043980773}
   m_Layer: 0
   m_Name: C
   m_TagString: Untagged
@@ -2386,7 +2541,7 @@ Transform:
   m_LocalScale: {x: 1.503, y: 4.113, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &2043980772
 AudioSource:
@@ -2399,7 +2554,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4c081585caf67477e8e08576acd1743f, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2484,3 +2639,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2043980773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043980767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d8cf4aac7961e64983ce3aab97173a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pianoC: {fileID: 2043980772}
