@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class keyPress : MonoBehaviour
-{
-    
+public class keyPress : MonoBehaviour {
+    public AudioSource keyboardPress;
+
     // Update is called once per frame
     void Update()
     {
@@ -14,6 +14,8 @@ public class keyPress : MonoBehaviour
              * add C note sound file
              * when D is pressed it will trigger the sound file once.
             */
+            keyboardPress.Play();
+
         }
 
 
