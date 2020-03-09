@@ -4,7 +4,26 @@ using UnityEngine;
 
 public class keyPress : MonoBehaviour
 {
-    
+    AudioSource A;
+    AudioSource As;
+    AudioSource B;
+    AudioSource Bs;
+    AudioSource C;
+    AudioSource Cs;
+    AudioSource D;
+    AudioSource Ds;
+    AudioSource E;
+    AudioSource Es;
+    AudioSource F;
+    AudioSource Fs;
+    AudioSource G;
+    AudioSource Gs;
+
+    void Start() {
+
+
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -14,6 +33,8 @@ public class keyPress : MonoBehaviour
              * add C note sound file
              * when D is pressed it will trigger the sound file once.
             */
+            C.Play();
+
         }
 
 
@@ -23,6 +44,7 @@ public class keyPress : MonoBehaviour
              * add D note sound file
              * when D is pressed it will trigger the sound file once.
             */
+            D.Play();
         }
 
         if (Input.GetKey(KeyCode.E))
@@ -31,6 +53,7 @@ public class keyPress : MonoBehaviour
              * add E note sound file
              * when E is pressed it will trigger the sound file once.
             */
+            E.Play();
         }
 
         if (Input.GetKey(KeyCode.F))
@@ -39,6 +62,7 @@ public class keyPress : MonoBehaviour
              * add F note sound file
              * when F is pressed it will trigger the sound file once.
             */
+            F.Play();
         }
 
         if (Input.GetKey(KeyCode.G))
@@ -47,6 +71,7 @@ public class keyPress : MonoBehaviour
              * add G note sound file
              * when G is pressed it will trigger the sound file once.
             */
+            G.Play();
         }
 
         if (Input.GetKey(KeyCode.A))
@@ -55,6 +80,7 @@ public class keyPress : MonoBehaviour
              * add A note sound file
              * when A is pressed it will trigger the sound file once.
             */
+            A.Play();
         }
 
         if (Input.GetKey(KeyCode.B))
@@ -63,6 +89,7 @@ public class keyPress : MonoBehaviour
              * add B note sound file
              * when B is pressed it will trigger the sound file once.
             */
+            B.Play();
         }
     }
 }
