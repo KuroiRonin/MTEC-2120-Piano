@@ -8,7 +8,7 @@ public class playPianoASharp : MonoBehaviour
     public MeshRenderer ASRenderer;
     public Material mat;
     public Color pressedKey;
-    public Color baseColor;
+
     void Start()
     {
         ASRenderer = GetComponent<MeshRenderer>();

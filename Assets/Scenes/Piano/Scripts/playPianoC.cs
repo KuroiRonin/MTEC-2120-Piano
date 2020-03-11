@@ -5,10 +5,10 @@ using UnityEngine;
 public class playPianoC : MonoBehaviour
 {
     public AudioSource pianoC;
-
+    MeshRenderer Renderer = GetComponent<MeshRenderer>();
     void Update()
     {
-        MeshRenderer Renderer = GetComponent<MeshRenderer>();
+
         if (Input.GetKeyUp(KeyCode.C))
         {
             pianoC.Play();
