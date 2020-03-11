@@ -22,7 +22,7 @@ public class playPianoA : MonoBehaviour {
            pianoA.Play();
             mat.SetColor("_Color",pressedKey);
         } else if ( Input.GetKeyUp(KeyCode.A) ) {
-           pianoA.Pause();
+           //pianoA.Pause();
             mat.SetColor("_Color", Color.white);
         }
     }

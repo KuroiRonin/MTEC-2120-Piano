@@ -3,24 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class playPianoASharp : MonoBehaviour
-{ public AudioSource pianoASharp;
+{
+    public AudioSource pianoAS;
+    public MeshRenderer ASRenderer;
+    public Material mat;
+    public Color pressedKey;
+    public Color baseColor;
+    void Start()
+    {
+        ASRenderer = GetComponent<MeshRenderer>();
+        mat = ASRenderer.material;
+        pressedKey = Color.red;
+
+    }
 
     void Update()
     {
-        MeshRenderer ASRenderer = GetComponent<MeshRenderer>();
-        if (Input.GetKeyUp(KeyCode.A) && Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            pianoASharp.Play();
-            ASRenderer.material.color = Color.red;
-        }
 
-        // for debugging
 
-        if (Input.GetKeyUp(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R))
         {
-            pianoASharp.Play();
-            ASRenderer.material.color = Color.red;
+            pianoAS.Play();
+            mat.SetColor("_Color", pressedKey);
         }
-        ASRenderer.material.color = Color.white;
+        else if (Input.GetKeyUp(KeyCode.R))
+        {
+            mat.SetColor("_Color", Color.black);
+        }
     }
 }
