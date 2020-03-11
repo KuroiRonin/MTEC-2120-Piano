@@ -19,7 +19,7 @@ public class playPianoDSharp : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Y))
+        if (Input.GetKeyDown(KeyCode.D)&& Input.GetKey(KeyCode.LeftShift))
         {
             pianoDS.Play();
             mat.SetColor("_Color", pressedKey);
