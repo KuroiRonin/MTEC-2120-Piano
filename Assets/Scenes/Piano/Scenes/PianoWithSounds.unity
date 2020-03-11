@@ -1117,7 +1117,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ed74a8ce6b6f34fb111e11da7bc4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pianoGSharp: {fileID: 580206621}
+  pianoGS: {fileID: 580206621}
+  GSRenderer: {fileID: 0}
+  mat: {fileID: 0}
+  pressedKey: {r: 0, g: 0, b: 0, a: 0}
+  baseColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &749255434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1733,7 +1737,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73a683397a912544db3e1ff2e9461adb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pianoCSharp: {fileID: 1244476074}
+  pianoCS: {fileID: 1244476074}
+  CSRenderer: {fileID: 0}
+  mat: {fileID: 0}
+  pressedKey: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1250441680
 GameObject:
   m_ObjectHideFlags: 0
@@ -2141,7 +2148,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ac21a90b9d17694db7dbd437f0d0255, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pianoFSharp: {fileID: 1306566167}
+  pianoFS: {fileID: 1306566167}
+  FSRenderer: {fileID: 0}
+  mat: {fileID: 0}
+  pressedKey: {r: 0, g: 0, b: 0, a: 0}
+  baseColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1350008065
 GameObject:
   m_ObjectHideFlags: 0
@@ -2549,7 +2560,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525cb53d1b8b7654c8e0077e5b6ca53e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pianoDSharp: {fileID: 1877615276}
+  pianoDS: {fileID: 1877615276}
+  DSRenderer: {fileID: 0}
+  mat: {fileID: 0}
+  pressedKey: {r: 0, g: 0, b: 0, a: 0}
+  baseColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1927304452
 GameObject:
   m_ObjectHideFlags: 0

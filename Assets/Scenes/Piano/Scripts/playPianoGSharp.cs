@@ -4,24 +4,29 @@ using UnityEngine;
 
 public class playPianoGSharp : MonoBehaviour
 {
-    public AudioSource pianoGSharp;
+    public AudioSource pianoGS;
+    public MeshRenderer GSRenderer;
+    public Material mat;
+    public Color pressedKey;
+    public Color baseColor;
+    void Start()
+    {
+        GSRenderer = GetComponent<MeshRenderer>();
+        mat = GSRenderer.material;
+        pressedKey = Color.red;
+
+    }
 
     void Update()
     {
-        MeshRenderer Renderer = GetComponent<MeshRenderer>();
-        if (Input.GetKeyUp(KeyCode.G) && Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.I))
         {
-            pianoGSharp.Play();
-            Renderer.material.color = Color.red;
+            pianoGS.Play();
+            mat.SetColor("_Color", pressedKey);
         }
-
-        // for debugging
-
-        if (Input.GetKeyUp(KeyCode.I))
+        else if (Input.GetKeyUp(KeyCode.I))
         {
-            pianoGSharp.Play();
-            Renderer.material.color = Color.red;
+            mat.SetColor("_Color", Color.black);
         }
-        Renderer.material.color = Color.white;
     }
 }
