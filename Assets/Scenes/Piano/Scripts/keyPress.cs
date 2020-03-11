@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class keyPress : MonoBehaviour
 {
-    AudioSource A;
+   /* AudioSource A;
     AudioSource As;
     AudioSource B;
     AudioSource Bs;
@@ -18,6 +18,17 @@ public class keyPress : MonoBehaviour
     AudioSource Fs;
     AudioSource G;
     AudioSource Gs;
+    public Color baseColor;
+    public Color pressedKey;
+    public MeshRenderer ARenderer;
+    public Material Amat;
+    public MeshRenderer BRenderer;
+    public Material Bmat;
+    public MeshRenderer CRenderer;
+    public Material Cmat;
+    public MeshRenderer DRenderer;
+    public Material Dmat;
+  
 
     void Start() {
 
@@ -32,7 +43,7 @@ public class keyPress : MonoBehaviour
             /*  TO DO:
              * add C note sound file
              * when D is pressed it will trigger the sound file once.
-            */
+            
             C.Play();
 
         }
@@ -43,7 +54,7 @@ public class keyPress : MonoBehaviour
             /*  TO DO:
              * add D note sound file
              * when D is pressed it will trigger the sound file once.
-            */
+           
             D.Play();
         }
 
@@ -52,7 +63,7 @@ public class keyPress : MonoBehaviour
             /*  TO DO:
              * add E note sound file
              * when E is pressed it will trigger the sound file once.
-            */
+            
             E.Play();
         }
 
@@ -61,7 +72,7 @@ public class keyPress : MonoBehaviour
             /*  TO DO:
              * add F note sound file
              * when F is pressed it will trigger the sound file once.
-            */
+            
             F.Play();
         }
 
@@ -70,7 +81,7 @@ public class keyPress : MonoBehaviour
             /*  TO DO:
              * add G note sound file
              * when G is pressed it will trigger the sound file once.
-            */
+            
             G.Play();
         }
 
@@ -79,7 +90,7 @@ public class keyPress : MonoBehaviour
             /*  TO DO:
              * add A note sound file
              * when A is pressed it will trigger the sound file once.
-            */
+            
             A.Play();
         }
 
@@ -88,8 +99,9 @@ public class keyPress : MonoBehaviour
             /*  TO DO:
              * add B note sound file
              * when B is pressed it will trigger the sound file once.
-            */
+            
             B.Play();
         }
     }
+    */
 }
