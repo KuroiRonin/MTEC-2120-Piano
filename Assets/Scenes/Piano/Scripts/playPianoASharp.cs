@@ -19,8 +19,6 @@ public class playPianoASharp : MonoBehaviour
 
     void Update()
     {
-
-
         if (Input.GetKeyDown(KeyCode.R))
         {
             pianoAS.Play();

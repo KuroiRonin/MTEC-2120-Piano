@@ -16,13 +16,10 @@ public class playPianoA : MonoBehaviour {
     }
 
     void Update() {
-
-   
         if (Input.GetKey(KeyCode.A)) {
            pianoA.Play();
             mat.SetColor("_Color",pressedKey);
-        } else if ( Input.GetKeyUp(KeyCode.A) ) {
-           //pianoA.Pause();
+        } else if (Input.GetKeyUp(KeyCode.A) ) {
             mat.SetColor("_Color", Color.white);
         }
     }
