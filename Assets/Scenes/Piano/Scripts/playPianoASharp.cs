@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class playPianoASharp : MonoBehaviour
 {
+<<<<<<< Updated upstream
     public AudioSource pianoAS;
     public MeshRenderer ASRenderer;
     public Material mat;
@@ -19,6 +20,18 @@ public class playPianoASharp : MonoBehaviour
 
     void Update()
     {
+=======
+  public AudioSource pianoASharp;
+  MeshRenderer ASRenderer = GetComponent<MeshRenderer>();
+    void Update()
+    {
+
+        if (Input.GetKeyDown(KeyCode.A) && Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            pianoASharp.Play();
+            ASRenderer.material.color = Color.red;
+        }
+>>>>>>> Stashed changes
 
 
         if (Input.GetKeyDown(KeyCode.R))
@@ -30,5 +43,9 @@ public class playPianoASharp : MonoBehaviour
         {
             mat.SetColor("_Color", Color.black);
         }
+<<<<<<< Updated upstream
+=======
+        ASRenderer.material.color = Color.black;
+>>>>>>> Stashed changes
     }
 }
