@@ -5,15 +5,27 @@ using UnityEngine;
 public class playPianoG : MonoBehaviour
 {
     public AudioSource pianoG;
-    MeshRenderer Renderer = GetComponent<MeshRenderer>();
+    public MeshRenderer GRenderer;
+    public Material mat;
+    public Color pressedKey;
+    public Color baseColor;
+
+    void Start()
+    {
+        GRenderer = GetComponent<MeshRenderer>();
+        mat = GRenderer.material;
+    }
+
     void Update()
     {
-
-        if (Input.GetKeyUp(KeyCode.G))
+        if (Input.GetKey(KeyCode.G) && !Input.GetKey(KeyCode.LeftShift))
         {
             pianoG.Play();
-            Renderer.material.color = Color.red;
+            mat.SetColor("_Color", pressedKey);
         }
-        Renderer.material.color = Color.white;
+        else if (Input.GetKeyUp(KeyCode.G))
+        {
+            mat.SetColor("_Color", Color.white);
+        }
     }
 }

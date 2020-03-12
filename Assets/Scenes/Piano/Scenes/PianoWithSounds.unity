@@ -210,7 +210,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110784008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.30999985, y: -0.08, z: -0.00583295}
+  m_LocalPosition: {x: 0.07, y: -0.08, z: -0.00583295}
   m_LocalScale: {x: 1.503, y: 4.113, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -325,6 +325,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pianoF: {fileID: 110784013}
+  FRenderer: {fileID: 110784010}
+  mat: {fileID: 0}
+  pressedKey: {r: 0, g: 0, b: 0, a: 0}
+  baseColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &294445386
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,7 +418,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 294445386}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.8000002, y: -0.08, z: -0.00583295}
+  m_LocalPosition: {x: 3.18, y: -0.08, z: -0.00583295}
   m_LocalScale: {x: 1.503, y: 4.113, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -529,7 +533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pianoA: {fileID: 294445391}
-  ARenderer: {fileID: 0}
+  ARenderer: {fileID: 294445388}
   mat: {fileID: 0}
   pressedKey: {r: 0, g: 0, b: 0, a: 0}
   baseColor: {r: 0, g: 0, b: 0, a: 0}
@@ -622,7 +626,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 305610846}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2400001, y: -0.08, z: -0.00583295}
+  m_LocalPosition: {x: 1.62, y: -0.08, z: -0.00583295}
   m_LocalScale: {x: 1.503, y: 4.113, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -737,100 +741,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pianoG: {fileID: 305610851}
---- !u!1 &423256049
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 423256053}
-  - component: {fileID: 423256052}
-  - component: {fileID: 423256051}
-  - component: {fileID: 423256050}
-  m_Layer: 0
-  m_Name: Plane
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!64 &423256050
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 423256049}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &423256051
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 423256049}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 8b87e9315e6574bc0a28efa19d63b3b3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &423256052
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 423256049}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &423256053
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 423256049}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.4, y: -0.05, z: 1.1}
-  m_LocalScale: {x: 1.67, y: 0, z: 1.69}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  GRenderer: {fileID: 305610848}
+  mat: {fileID: 0}
+  pressedKey: {r: 0, g: 0, b: 0, a: 0}
+  baseColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,7 +917,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 580206616}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.9100001, y: 0.65, z: -2.3488202}
+  m_LocalPosition: {x: 2.29, y: 0.69, z: -2.3488202}
   m_LocalScale: {x: 0.8, y: 2.61, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1118,7 +1032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pianoGS: {fileID: 580206621}
-  GSRenderer: {fileID: 0}
+  GSRenderer: {fileID: 580206618}
   mat: {fileID: 0}
   pressedKey: {r: 0, g: 0, b: 0, a: 0}
   baseColor: {r: 0, g: 0, b: 0, a: 0}
@@ -1211,7 +1125,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 749255434}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.46, y: 0.65, z: -2.3488202}
+  m_LocalPosition: {x: 3.84, y: 0.69, z: -2.3488202}
   m_LocalScale: {x: 0.8, y: 2.61, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1326,10 +1240,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pianoAS: {fileID: 749255439}
-  ASRenderer: {fileID: 0}
+  ASRenderer: {fileID: 749255436}
   mat: {fileID: 0}
   pressedKey: {r: 0, g: 0, b: 0, a: 0}
-  baseColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1035996129
 GameObject:
   m_ObjectHideFlags: 0
@@ -1419,7 +1332,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035996129}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.42, y: -0.08, z: -0.00583295}
+  m_LocalPosition: {x: -3.0400002, y: -0.08, z: -0.00583295}
   m_LocalScale: {x: 1.503, y: 4.113, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1534,6 +1447,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pianoD: {fileID: 1035996134}
+  DRenderer: {fileID: 1035996131}
+  mat: {fileID: 0}
+  pressedKey: {r: 0, g: 0, b: 0, a: 0}
+  baseColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1244476069
 GameObject:
   m_ObjectHideFlags: 0
@@ -1623,7 +1540,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244476069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.22, y: 0.65, z: -2.3488202}
+  m_LocalPosition: {x: -3.84, y: 0.69, z: -2.3488202}
   m_LocalScale: {x: 0.8, y: 2.61, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1738,7 +1655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pianoCS: {fileID: 1244476074}
-  CSRenderer: {fileID: 0}
+  CSRenderer: {fileID: 1244476071}
   mat: {fileID: 0}
   pressedKey: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1250441680
@@ -1830,7 +1747,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1250441680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.86, y: -0.08, z: -0.00583295}
+  m_LocalPosition: {x: -1.4800001, y: -0.08, z: -0.00583295}
   m_LocalScale: {x: 1.503, y: 4.113, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1945,6 +1862,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pianoE: {fileID: 1250441685}
+  ERenderer: {fileID: 1250441682}
+  mat: {fileID: 0}
+  pressedKey: {r: 0, g: 0, b: 0, a: 0}
+  baseColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1306566162
 GameObject:
   m_ObjectHideFlags: 0
@@ -2034,7 +1955,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1306566162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.41000015, y: 0.65, z: -2.3488202}
+  m_LocalPosition: {x: 0.78999996, y: 0.69, z: -2.3488202}
   m_LocalScale: {x: 0.8, y: 2.61, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2149,7 +2070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pianoFS: {fileID: 1306566167}
-  FSRenderer: {fileID: 0}
+  FSRenderer: {fileID: 1306566164}
   mat: {fileID: 0}
   pressedKey: {r: 0, g: 0, b: 0, a: 0}
   baseColor: {r: 0, g: 0, b: 0, a: 0}
@@ -2242,7 +2163,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350008065}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.35, y: -0.08, z: -0.00583295}
+  m_LocalPosition: {x: 4.7299995, y: -0.08, z: -0.00583295}
   m_LocalScale: {x: 1.503, y: 4.113, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2357,6 +2278,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pianoB: {fileID: 1350008070}
+  BRenderer: {fileID: 1350008067}
+  mat: {fileID: 0}
+  pressedKey: {r: 0, g: 0, b: 0, a: 0}
+  baseColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1877615271
 GameObject:
   m_ObjectHideFlags: 0
@@ -2446,7 +2371,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877615271}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.68, y: 0.65, z: -2.3488202}
+  m_LocalPosition: {x: -2.3000002, y: 0.69, z: -2.3488202}
   m_LocalScale: {x: 0.8, y: 2.61, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2561,7 +2486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pianoDS: {fileID: 1877615276}
-  DSRenderer: {fileID: 0}
+  DSRenderer: {fileID: 1877615273}
   mat: {fileID: 0}
   pressedKey: {r: 0, g: 0, b: 0, a: 0}
   baseColor: {r: 0, g: 0, b: 0, a: 0}
@@ -2746,7 +2671,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043980767}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.96, y: -0.08, z: -0.00583295}
+  m_LocalPosition: {x: -4.5800004, y: -0.08, z: -0.00583295}
   m_LocalScale: {x: 1.503, y: 4.113, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2861,3 +2786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pianoC: {fileID: 2043980772}
+  CRenderer: {fileID: 2043980769}
+  mat: {fileID: 0}
+  pressedKey: {r: 0, g: 0, b: 0, a: 0}
+  baseColor: {r: 0, g: 0, b: 0, a: 0}
