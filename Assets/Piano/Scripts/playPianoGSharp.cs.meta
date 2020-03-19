@@ -3,7 +3,12 @@ guid: 06ed74a8ce6b6f34fb111e11da7bc4fb
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - pianoGS: {instanceID: 0}
+  - GSRenderer: {instanceID: 0}
+  - mat: {instanceID: 0}
+  - FloatingTextGSharp: {fileID: 2244026501414014732, guid: 0240a9d7c5a3d34469d315f3a97409e5,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

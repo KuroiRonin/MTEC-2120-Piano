@@ -8,6 +8,7 @@ public class playPianoB : MonoBehaviour {
     public Material mat;
     public Color pressedKey;
     public Color baseColor;
+    public GameObject FloatingTextB;
 
     void Start() {
         BRenderer = GetComponent<MeshRenderer>();
@@ -15,12 +16,20 @@ public class playPianoB : MonoBehaviour {
     }
 
     void Update() {
-        if (Input.GetKey(KeyCode.B) && !Input.GetKey(KeyCode.LeftShift)) {
+        wasKeyPressed();
+    }
+
+    void wasKeyPressed() {
+        if (Input.GetKeyDown(KeyCode.B) && !Input.GetKey(KeyCode.LeftShift)) {
             pianoB.Play();
-            mat.SetColor("_Color", pressedKey);
+            mat.SetColor("_Color", pressedKey); 
+            showFloatingText();
         }
         else if (Input.GetKeyUp(KeyCode.B)) {
             mat.SetColor("_Color", Color.white);
         }
+    }
+        void showFloatingText() {
+        Instantiate(FloatingTextB, transform.position, Quaternion.identity, transform);
     }
 }

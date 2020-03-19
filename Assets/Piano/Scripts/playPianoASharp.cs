@@ -7,6 +7,8 @@ public class playPianoASharp : MonoBehaviour {
     public MeshRenderer ASRenderer;
     public Material mat;
     public Color pressedKey;
+    public GameObject FloatingTextASharp;
+
 
     void Start() {
         ASRenderer = GetComponent<MeshRenderer>();
@@ -21,12 +23,17 @@ public class playPianoASharp : MonoBehaviour {
 
     void wasKeyPressed() {
 
-        if (Input.GetKey(KeyCode.LeftShift) && (Input.GetKey(KeyCode.A) || Input.GetKeyDown(KeyCode.A))) {
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.A)) {
             pianoAS.Play();
             mat.SetColor("_Color", pressedKey);
+            showFloatingText();
         }
         else {
             mat.SetColor("_Color", Color.black);
         }
+    }
+
+    void showFloatingText() {
+        Instantiate(FloatingTextASharp, transform.position, Quaternion.identity, transform);
     }
 }

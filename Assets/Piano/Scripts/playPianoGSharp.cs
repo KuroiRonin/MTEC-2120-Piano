@@ -8,6 +8,8 @@ public class playPianoGSharp : MonoBehaviour {
     public Material mat;
     public Color pressedKey;
     public Color baseColor;
+    public GameObject FloatingTextGSharp;
+
     void Start() {
         GSRenderer = GetComponent<MeshRenderer>();
         mat = GSRenderer.material;
@@ -24,9 +26,14 @@ public class playPianoGSharp : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.G) && Input.GetKey(KeyCode.LeftShift)) {
             pianoGS.Play();
             mat.SetColor("_Color", pressedKey);
+            showFloatingText();
+
         }
         else if (Input.GetKeyUp(KeyCode.G) && Input.GetKey(KeyCode.LeftShift)) {
             mat.SetColor("_Color", Color.black);
         }
+    }
+    void showFloatingText() {
+        Instantiate(FloatingTextGSharp, transform.position, Quaternion.identity, transform);
     }
 }

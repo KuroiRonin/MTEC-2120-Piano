@@ -3,7 +3,12 @@ guid: 31639cc5e93d1b44698afd51647cfcff
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - pianoG: {instanceID: 0}
+  - GRenderer: {instanceID: 0}
+  - mat: {instanceID: 0}
+  - FloatingTextG: {fileID: 7630357346836465031, guid: df23d88de8e8e3c4dad8aaed3f86cfa5,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -7,7 +7,7 @@ MonoImporter:
   - pianoA: {instanceID: 0}
   - ARenderer: {instanceID: 0}
   - mat: {instanceID: 0}
-  - floatingTextA: {fileID: 3704608531866106387, guid: 80f7ec05fd5731341b8df882974f1d95,
+  - FloatingTextA: {fileID: 1457025521240018515, guid: 5fc3990315f36d64a80bd8821955447c,
       type: 3}
   executionOrder: 0
   icon: {instanceID: 0}

@@ -3,7 +3,12 @@ guid: 525cb53d1b8b7654c8e0077e5b6ca53e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - pianoDS: {instanceID: 0}
+  - DSRenderer: {instanceID: 0}
+  - mat: {instanceID: 0}
+  - FloatingTextDSharp: {fileID: 4048404735921849121, guid: 578e200338558c44e81f4b598ef1fc71,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -329,6 +329,8 @@ MonoBehaviour:
   mat: {fileID: 0}
   pressedKey: {r: 0, g: 0, b: 0, a: 0}
   baseColor: {r: 0, g: 0, b: 0, a: 0}
+  FloatingTextF: {fileID: 3072670078346960831, guid: 7422558a78ab17f428f04c0addd9d7b4,
+    type: 3}
 --- !u!1 &294445386
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,11 +340,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 294445390}
+  - component: {fileID: 294445392}
   - component: {fileID: 294445389}
   - component: {fileID: 294445388}
   - component: {fileID: 294445387}
   - component: {fileID: 294445391}
-  - component: {fileID: 294445392}
   m_Layer: 0
   m_Name: A
   m_TagString: Untagged
@@ -537,6 +539,8 @@ MonoBehaviour:
   mat: {fileID: 0}
   pressedKey: {r: 0, g: 0, b: 0, a: 0}
   baseColor: {r: 0, g: 0, b: 0, a: 0}
+  FloatingTextA: {fileID: 1457025521240018515, guid: 5fc3990315f36d64a80bd8821955447c,
+    type: 3}
 --- !u!1 &305610846
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,6 +749,8 @@ MonoBehaviour:
   mat: {fileID: 0}
   pressedKey: {r: 0, g: 0, b: 0, a: 0}
   baseColor: {r: 0, g: 0, b: 0, a: 0}
+  FloatingTextG: {fileID: 7630357346836465031, guid: df23d88de8e8e3c4dad8aaed3f86cfa5,
+    type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1036,6 +1042,8 @@ MonoBehaviour:
   mat: {fileID: 0}
   pressedKey: {r: 0, g: 0, b: 0, a: 0}
   baseColor: {r: 0, g: 0, b: 0, a: 0}
+  FloatingTextGSharp: {fileID: 2244026501414014732, guid: 0240a9d7c5a3d34469d315f3a97409e5,
+    type: 3}
 --- !u!1 &749255434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1243,6 +1251,8 @@ MonoBehaviour:
   ASRenderer: {fileID: 749255436}
   mat: {fileID: 0}
   pressedKey: {r: 0, g: 0, b: 0, a: 0}
+  FloatingTextASharp: {fileID: 337267381501841242, guid: 630c645bede9e44459940ee814767917,
+    type: 3}
 --- !u!1 &1035996129
 GameObject:
   m_ObjectHideFlags: 0
@@ -1451,6 +1461,8 @@ MonoBehaviour:
   mat: {fileID: 0}
   pressedKey: {r: 0, g: 0, b: 0, a: 0}
   baseColor: {r: 0, g: 0, b: 0, a: 0}
+  FloatingTextD: {fileID: 7848320118828504178, guid: c4a79a3cefea29e49a48309c658e5073,
+    type: 3}
 --- !u!1 &1244476069
 GameObject:
   m_ObjectHideFlags: 0
@@ -1658,6 +1670,8 @@ MonoBehaviour:
   CSRenderer: {fileID: 1244476071}
   mat: {fileID: 0}
   pressedKey: {r: 0, g: 0, b: 0, a: 0}
+  FloatingTextCSharp: {fileID: 3706463005200171563, guid: 7546384643696c24b84146ba1d055e3b,
+    type: 3}
 --- !u!1 &1250441680
 GameObject:
   m_ObjectHideFlags: 0
@@ -1866,6 +1880,8 @@ MonoBehaviour:
   mat: {fileID: 0}
   pressedKey: {r: 0, g: 0, b: 0, a: 0}
   baseColor: {r: 0, g: 0, b: 0, a: 0}
+  FloatingTextE: {fileID: 4179945423697016691, guid: b6e2963cec54c3c4d825a1941eb852d7,
+    type: 3}
 --- !u!1 &1306566162
 GameObject:
   m_ObjectHideFlags: 0
@@ -2074,6 +2090,8 @@ MonoBehaviour:
   mat: {fileID: 0}
   pressedKey: {r: 0, g: 0, b: 0, a: 0}
   baseColor: {r: 0, g: 0, b: 0, a: 0}
+  FloatingTextFSharp: {fileID: 3083427395197183156, guid: 0c8cd0d5a76bc0844a9ec06139efdbaf,
+    type: 3}
 --- !u!1 &1350008065
 GameObject:
   m_ObjectHideFlags: 0
@@ -2282,6 +2300,8 @@ MonoBehaviour:
   mat: {fileID: 0}
   pressedKey: {r: 0, g: 0, b: 0, a: 0}
   baseColor: {r: 0, g: 0, b: 0, a: 0}
+  FloatingTextB: {fileID: 6677235283915387207, guid: 5028d7229d561dd4a8027dab06e68a14,
+    type: 3}
 --- !u!1 &1877615271
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,7 +2509,8 @@ MonoBehaviour:
   DSRenderer: {fileID: 1877615273}
   mat: {fileID: 0}
   pressedKey: {r: 0, g: 0, b: 0, a: 0}
-  baseColor: {r: 0, g: 0, b: 0, a: 0}
+  FloatingTextDSharp: {fileID: 4048404735921849121, guid: 578e200338558c44e81f4b598ef1fc71,
+    type: 3}
 --- !u!1 &1927304452
 GameObject:
   m_ObjectHideFlags: 0
@@ -2790,3 +2811,5 @@ MonoBehaviour:
   mat: {fileID: 0}
   pressedKey: {r: 0, g: 0, b: 0, a: 0}
   baseColor: {r: 0, g: 0, b: 0, a: 0}
+  FloatingTextC: {fileID: 2449525929293580224, guid: 5f283bb149b2b874b9e535a3d270e45b,
+    type: 3}
