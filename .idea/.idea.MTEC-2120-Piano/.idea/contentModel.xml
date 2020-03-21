@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\edwin\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\edwin\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_MTEC-2120-Piano.-694431751.00" t="ExcludeRecursive" />
+    <e p="C:\Users\edwin\Desktop\GitHub\MTEC-2120-Piano" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Piano" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="keyPress.cs" t="Include" />
+            <e p="playPianoA.cs" t="Include" />
+            <e p="playPianoASharp.cs" t="Include" />
+            <e p="playPianoB.cs" t="Include" />
+            <e p="playPianoC.cs" t="Include" />
+            <e p="playPianoCSharp.cs" t="Include" />
+            <e p="playPianoD.cs" t="Include" />
+            <e p="playPianoDSharp.cs" t="Include" />
+            <e p="playPianoE.cs" t="Include" />
+            <e p="playPianoF.cs" t="Include" />
+            <e p="playPianoFSharp.cs" t="Include" />
+            <e p="playPianoG.cs" t="Include" />
+            <e p="playPianoGSharp.cs" t="Include" />
+          </e>
+          <e p="TextScript" t="Include">
+            <e p="FloatingText.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="MTEC-2120-Piano.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
