@@ -25,12 +25,11 @@ public class playPianoA : MonoBehaviour {
             mat.SetColor("_Color", pressedKey);
             showFloatingText();
         }
-        else {
+        else if (Input.GetKeyUp(KeyCode.A)) {
             mat.SetColor("_Color", Color.white);
             
         }
-    }
-    void showFloatingText() {
+    }   void showFloatingText() {
         Instantiate(FloatingTextA, transform.position, Quaternion.identity, transform);
     }
 }

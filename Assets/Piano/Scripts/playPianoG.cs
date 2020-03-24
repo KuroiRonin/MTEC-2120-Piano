@@ -25,7 +25,7 @@ public class playPianoG : MonoBehaviour {
             mat.SetColor("_Color", pressedKey);
             showFloatingText();
         }
-        else {
+        else if (Input.GetKeyUp(KeyCode.G)) {
             mat.SetColor("_Color", Color.white);
         }
     }
